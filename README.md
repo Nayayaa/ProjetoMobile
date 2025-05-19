@@ -1,2 +1,2 @@
 # ProjetoMobile
-Projeto feito no Android Studio para uma assosiação de moradores. 
+Projeto feito no Android Studio para uma assosciação de moradores. 
