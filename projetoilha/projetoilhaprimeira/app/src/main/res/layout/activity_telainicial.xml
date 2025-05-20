@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#C7EAE9">
+
+    <!-- Logo -->
+
+    <!-- Texto de Boas-Vindas -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="168dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:contentDescription="Logo da Aplicação"
+        android:src="@drawable/imagem1" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo(a) ao Recenseamento!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"/>
+
+    <!-- Texto Explicativo -->
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajude-nos a coletar dados importantes sobre sua região."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"/>
+
+    <!-- Área de Ilustração do Recenseamento -->
+
+    <!-- Botão de Início -->
+    <LinearLayout
+        android:layout_width="305dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D6EEF0"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/imgSurvey"
+            android:layout_width="245dp"
+            android:layout_height="100dp"
+            android:contentDescription="Ícone do questionário"
+            android:src="@drawable/survey" />
+
+        <TextView
+            android:id="@+id/txtSurveyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Duração estimada:\n 15 minutos"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#006680"
+        android:padding="10dp"
+        android:text="Iniciar"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

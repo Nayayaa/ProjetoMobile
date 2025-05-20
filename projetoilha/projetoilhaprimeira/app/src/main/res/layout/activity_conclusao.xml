@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3F3F2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/imagem1"
+        android:contentDescription="Logo AMIP"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Texto de confirmação -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulário enviado com sucesso!"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Ícone de check -->
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/conclusao"
+    android:contentDescription="Sucesso"
+    android:layout_marginBottom="32dp" />
+
+    <!-- Botão para voltar ao início -->
+    <Button
+        android:id="@+id/btnRetornarInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retornar ao Início"
+        android:backgroundTint="#0077A1"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:minWidth="200dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
