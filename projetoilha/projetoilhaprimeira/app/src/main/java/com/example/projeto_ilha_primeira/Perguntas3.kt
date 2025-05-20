@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 class Perguntas3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_perguntas9)  // Certifique-se de que o layout esteja correto
+        setContentView(R.layout.activity_perguntas3)  // Certifique-se de que o layout esteja correto
 
         // Spinner para Alfabetizados
         val alfabetizadosSpinner = findViewById<Spinner>(R.id.spinnerAlfabetizados)
