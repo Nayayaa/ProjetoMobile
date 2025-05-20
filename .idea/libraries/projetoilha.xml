@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="projetoilha">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/projetoilha.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

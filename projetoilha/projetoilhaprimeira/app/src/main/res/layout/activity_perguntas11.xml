@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Cabeçalho com logo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/blue_box"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/imagem1"
+                android:contentDescription="Logo AMIP"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Número da pergunta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RELIGIÃO OU CULTO"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Enunciado -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUAL SUA RELIGIÃO OU CULTO?"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Grupo de opções com fundo azul claro -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_box"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupReligiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radioCristianismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cristianismo" />
+
+                <RadioButton android:id="@+id/radioIslamismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Islamismo" />
+
+                <RadioButton android:id="@+id/radioHinduismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hinduísmo" />
+
+                <RadioButton android:id="@+id/radioBudismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budismo" />
+
+                <RadioButton android:id="@+id/radioJudaismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judaísmo" />
+
+                <RadioButton android:id="@+id/radioEspiritismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Espiritismo" />
+
+                <RadioButton android:id="@+id/radioOutra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outra" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Botões -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#D6EEF0"
+                android:textColor="#006680"
+                android:text="Voltar" />
+
+            <Button
+                android:id="@+id/btnProximo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Proximo"
+                android:backgroundTint="#006680"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Link inferior -->
+        <TextView
+            android:id="@+id/textRetornarInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retornar ao início"
+            android:textColor="#006680"
+            android:layout_gravity="start"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</ScrollView>

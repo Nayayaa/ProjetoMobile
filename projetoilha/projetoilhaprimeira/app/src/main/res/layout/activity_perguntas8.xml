@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Logo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/blue_box"
+            android:padding="16dp">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/imagem1"
+                android:contentDescription="Logo" />
+        </LinearLayout>
+
+        <!-- Título -->
+        <TextView
+            android:text="8)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="PESSOAS COM DEFICIÊNCIA (IDADE: 2 ANOS+)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Pergunta Visão -->
+        <TextView
+            android:text="TEM DIFICULDADE PERMANENTE DE ENXERGAR MESMO USANDO ÓCULOS OU LENTES DE CONTATO?"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/blue_box"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroupVisao"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/radioVisao1" android:text="Tem, não consegue de modo algum"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioVisao2" android:text="Tem muita dificuldade"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioVisao3" android:text="Tem alguma dificuldade"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioVisao4" android:text="Não tem dificuldade"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Pergunta Audição -->
+        <TextView
+            android:text="TEM DIFICULDADE PERMANENTE PARA OUVIR, MESMO USANDO APARELHOS AUDITIVOS?"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/blue_box"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroupAudicao"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/radioAudicao1" android:text="Tem, não consegue de modo algum"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioAudicao2" android:text="Tem muita dificuldade"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioAudicao3" android:text="Tem alguma dificuldade"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioAudicao4" android:text="Não tem dificuldade"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Botões -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#D6EEF0"
+                android:textColor="#006680"
+                android:text="Voltar" />
+
+            <Button
+                android:id="@+id/btnProximo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Próximo"
+                android:backgroundTint="#006680"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7EAE9"
+    tools:context=".MainActivity">
+
+    <!-- Imagem existente -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="216dp"
+        android:layout_height="339dp"
+        app:srcCompat="@drawable/imagem1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão para navegar para a Tela de login -->
+    <Button
+        android:id="@+id/goToLoginButton"
+        android:layout_width="380dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#006680"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
